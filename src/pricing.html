@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionic Pricing</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- animate.css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- wayponit cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+    * {
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    td {
+        text-align: left;
+        padding: 10px;
+        padding-right: 20px;
+    }
+    
+    th {
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 60px;
+    }
+</style>
+
+<body class="relative overflow-x-hidden">
+    <!-- firstNav s -->
+    <nav class="relative md:flex items-center justify-center h-16 hidden">
+        <img src="/assets/firstNavBg.svg" class="absolute top-0 object-cover whitespace-nowrap h-16 w-full">
+        <div class='container mx-auto flex justify-center whitespace-nowrap absolute'>
+            <span class="text-white font-semibold text-sm mr-1">Q4 Update: Iconic Show.</span>
+            <span class="text-slate-300 font-semibold text-sm">December 13th 2022.</span>
+            <button class="bg-white rounded-xl px-3 py-1 ml-5 hover:bg-slate-200 duration-300">
+    <div class="flex justify-center items-center font-bold space-x-1">
+     <span class="text-[9px]  uppercase">Register Now</span>
+     <i class="fa-solid fa-arrow-right text-[9px]"></i>
+    </div>
+   </button>
+        </div>
+    </nav>
+    <!-- firstNav e -->
+
+    <!-- secondNav s -->
+    <div class="relative py-3 md:py-0 px-3 md:px-5 lg:px-32  bg-white animate__animated duration-500 border-b z-40">
+        <div class="">
+            <nav class="text-sm prose prose-slate max-w-none flex justify-between items-center ">
+                <div class="logo">
+                    <img class="" src="/assets/logo.svg" alt="">
+                </div>
+                <div class="show-mobild-menu-box hidden md:flex transition">
+                    <div class="fixed  md:static top-5 md:top-auto left-0 md:left-auto right-0 md:right-auto w-[98%] md:w-auto bg-white md:bg-transparent shadow-2xl md:shadow-none mx-auto rounded-2xl md:rounded-none p-1 overflow-hidden h-[100%]">
+                        <div onclick="menuIcon()" class="md:hidden menu-icon absolute top-5 right-5 flex justify-center items-center rounded-full border w-10 h-10">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <ul class="md:flex justify-center md:space-x-3 list-none pl-0 my-0 overflow-y-auto h-[100%]">
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none mega">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-default">
+                                    Platform</div>
+                                <div class="mega-item md:absolute md:left-0 md:right-0 md:m-auto md:w-11/12 lg:w-5/6 md:rounded-3xl md:bg-white md:shadow-2xl p-3 md:p-5 transition delay-150 lg:px-10">
+                                    <div class="grid md:grid-cols-5 lg:grid-cols-5">
+                                        <div class="bg-[url('/assets/bg.png')] object-contain bg-no-repeat bg-contain w-64 h-64 lg:w-72 lg:h-72 rounded-3xl  p-5 hidden md:inline-block md:col-span-2 lg:col-span-2">
+                                            <h3 class="text-[#fff] text-xl lg:text-2xl font-medium">Ionic for Enterprise</h3>
+                                            <h4 class="text-slate-300 font-medium text-lg lg:text-xl mt-3">Accelerate the way your business builds modern apps at scale.
+                                            </h4>
+                                            <button class="bg-slate-500 text-white px-3 py-1 rounded-2xl mt-10 lg:mt-20">
+                                            <span>Learn more</span>
+                                            <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                           </button>
+                                        </div>
+                                        <div class="md:flex  space-y-5 md:space-y-0 mt-5 md:space-x-10 md:justify-evenly md:col-span-3 lg:col-span-3">
+                                            <div class="hidden md:inline-block">
+                                                <h3 class="text-black text-lg font-medium">Mobile App Dev</h3>
+                                                <ul class="space-y-5 mt-5 mb-5">
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-layer-group mr-2"></i>
+                                                        <span>Ionic SDK</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-ring mr-2"></i>
+                                                        <span class="mr-2">Portals</span>
+                                                        <span class="text-[#3374eb] font-semibold">New</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-table-list mr-2"></i>
+                                                        <span>Itegrations</span>
+                                                    </li>
+                                                </ul>
+                                                <h4 class="text-slate-600 text-md font-medium">
+                                                    <span>Explore</span>
+                                                    <a class="text-black bg-white shadow">
+                                                        <span>Docs</span>
+                                                        <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div class="hidden md:inline-block">
+                                                <h3 class="text-black text-lg font-medium">Mobile CI/CD</h3>
+                                                <ul class="space-y-5 mt-5 mb-5">
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-stairs mr-2"></i>
+                                                        <span>Overview</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-shapes mr-2"></i>
+                                                        <span>Live Updates</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-rug mr-2"></i>
+                                                        <span>Native Builds</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-ranking-star mr-2"></i>
+                                                        <span class="mr-2">App Publishing</span>
+                                                        <span class="text-[#3374eb] font-semibold">New</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-object-ungroup mr-2"></i>
+                                                        <span>Automation</span>
+                                                    </li>
+                                                </ul>
+                                                <h4 class="text-slate-600 text-md font-medium">
+                                                    <span>Explore</span>
+                                                    <a class="text-black bg-white shadow">
+                                                        <span>Docs</span>
+                                                        <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div class="hidden md:inline-block">
+                                                <h3 class="text-black text-lg font-medium">Mobile Security</h3>
+                                                <ul class="space-y-5 mt-5 mb-5">
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-layer-group mr-2"></i>
+                                                        <span>Auth</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-table-list mr-2"></i>
+                                                        <span>Biometrics</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium">
+                                                        <i class="fa-solid fa-table-list mr-2"></i>
+                                                        <span>Storage</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="md:hidden">
+                                                <div class="amazing transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                                    <span class="text-xl md:text-sm">Features</span>
+                                                    <i class="fa-solid fa-chevron-down transition icon md:hidden"></i>
+                                                </div>
+                                                <div class="amazing-item hidden opacity-0 md:flex md:opacity-100">
+                                                    <ul class="list-none pl-0 grid grid-cols-2 md:grid-cols-1 gap-5 mt-5">
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Framework</a>
+                                                        </li>
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Capacitor</a>
+                                                        </li>
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Appflow</a>
+                                                        </li>
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Identity Vault</a>
+                                                        </li>
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Secure Storage</a>
+                                                        </li>
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Auth Connect</a>
+                                                        </li>
+                                                        <li class="p-0">
+                                                            <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Advisory</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="md:hidden ">
+                                                <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                                    <a href="#" class="text-xl md:text-sm">Why Iconic?</a>
+                                                </div>
+                                                <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center mt-4">
+                                                    <a href="#" class="text-xl md:text-sm">Pricing</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none mega">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-default">
+                                    Solutions</div>
+                                <div class="mega-item md:absolute md:left-0 md:right-0 md:m-auto md:w-5/6 md:rounded-3xl md:bg-white md:shadow-2xl p-3 md:p-5 transition delay-150">
+                                    <div class="md:flex md:justify-between space-y-5 md:space-y-0 lg:px-5">
+                                        <div class="hidden md:flex md:flex-col lg:py-3 lg:px-5">
+                                            <h1 class="text-2xl font-medium">Solutions</h1>
+                                            <p class="lg:max-w-[230px] md:max-w-[180px] mt-3 mb-10 text-xl leading-8 text-slate-500 ">
+                                                Learn how to make the most of the Ionic app development platform.
+                                            </p>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Use Cases</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>App Creation</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Mobile Security</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>CI/CD App Delivery</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Mobile Icon Frontends</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Digital Transformation</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Why Ionic</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>For Developers</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>For Architects</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>For IT Executives</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Customer Stories</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="hidden md:inline-block bg-slate-50 lg:py-3 lg:px-5 rounded-xl ">
+                                            <h3 class="text-black text-lg font-medium ">Industries</h3>
+                                            <ul class=" mt-5 mb-5 flex md:flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 ">
+                                                <div class="space-y-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-building-columns mr-2 "></i>
+                                                        <span>Banking</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-school mr-2 "></i>
+                                                        <span>Education</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-industry mr-2 "></i>
+                                                        <span>Menufacturing</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-microchip mr-2 "></i>
+                                                        <span class="mr-2 ">Technology</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-paper-plane mr-2 "></i>
+                                                        <span>Transporating</span>
+                                                    </li>
+                                                </div>
+                                                <div class="space-y-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-notes-medical mr-2 "></i>
+                                                        <span>Healthcare</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-shield mr-2 "></i>
+                                                        <span>Incurance</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <i class="fa-solid fa-cart-shopping mr-2 "></i>
+                                                        <span>Retail</span>
+                                                    </li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="md:hidden">
+                                            <div class="amazing transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                                <span class="text-xl md:text-sm">Solutions</span>
+                                                <i class="fa-solid fa-chevron-down transition icon md:hidden"></i>
+                                            </div>
+                                            <div class="amazing-item hidden opacity-0 md:flex md:opacity-100">
+                                                <ul class="list-none pl-0 grid grid-cols-2 md:grid-cols-1 gap-5 mt-5">
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">App Creation</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Mobile Security</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">App Delivery</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="md:hidden">
+                                            <div class="amazing transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                                <span class="text-xl md:text-sm">Industries</span>
+                                                <i class="fa-solid fa-chevron-down transition icon md:hidden"></i>
+                                            </div>
+                                            <div class="amazing-item hidden opacity-0 md:flex md:opacity-100">
+                                                <ul class="list-none pl-0 grid grid-cols-2 md:grid-cols-1 gap-5 mt-5">
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Banking</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Healthcare</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Education</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Incurance</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Menufacturing</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Retail</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Technology</a>
+                                                    </li>
+                                                    <li class="p-0">
+                                                        <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Transporating</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="md:hidden ">
+                                            <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                                <a href="#" class="text-xl md:text-sm">Resource Center</a>
+                                            </div>
+                                            <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center mt-4">
+                                                <a href="#" class="text-xl md:text-sm">Customer Stories</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none mega hidden md:inline-block">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-default ">
+                                    Resources</div>
+                                <div class="mega-item md:absolute md:left-0 md:right-0 md:m-auto md:w-5/6 md:rounded-3xl md:bg-white md:shadow-2xl p-3 md:p-5 transition delay-150 ">
+                                    <div class="md:flex md:justify-between space-y-5 md:space-y-0 ">
+                                        <div class="hidden md:flex md:flex-col lg:py-3 lg:px-5">
+                                            <h1 class="text-2xl font-medium">Resources</h1>
+                                            <p class="lg:max-w-[250px] md:max-w-[180px] mt-3 mb-10 text-xl leading-8 text-slate-500 ">
+                                                Resources to help you learn how to build, secure, and deliver amazing apps
+                                            </p>
+                                            <div class="flex flex-col ">
+                                                <a href="# " class=" font-bold text-lg ">
+                                                    <span>Icons</span>
+                                                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                                                </a>
+                                                <a href="# " class=" font-bold text-lg ">
+                                                    <span>Resource Center</span>
+                                                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between lg:space-x-20 space-x-10">
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Developers</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Documentation</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Ionic Framework</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Native Plugins</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Ionic Appflow</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Ionic CLI</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Portais</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Learn</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Blog</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Webinars</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Articles</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">eBooks</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Case Studies</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Enterprise Guide</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Community</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Community Hub</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Trusted Partners</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Ioniconf 22</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Forum</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Discord</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none mega md:hidden">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-default mb-8">
+                                    Developers</div>
+                                <div class="mega-item md:absolute md:left-0 md:right-0 md:m-auto md:w-5/6 md:rounded-3xl md:bg-white md:shadow-2xl p-3 md:p-5 transition delay-150 space-y-5">
+                                    <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center md:hidden">
+                                        <a href="#" class="text-xl md:text-sm">Docs</a>
+                                    </div>
+                                    <div class="md:hidden">
+                                        <div class="amazing transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                            <span class="text-xl md:text-sm">Quickstart</span>
+                                            <i class="fa-solid fa-chevron-down transition icon md:hidden"></i>
+                                        </div>
+                                        <div class="amazing-item hidden opacity-0 md:flex md:opacity-100">
+                                            <ul class="list-none pl-0 grid grid-cols-2 md:grid-cols-1 gap-5 mt-5">
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Ionic Framework</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Capacitor</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Appflow</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Secure Storage</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Auth Connect</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Premier Plugfa-inverse</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Community</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Github</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="md:hidden">
+                                        <div class="amazing transition-all delay-75 rounded-xl font-bold flex justify-between items-center">
+                                            <span class="text-xl md:text-sm">Ionic Open
+                                              </span>
+                                            <i class="fa-solid fa-chevron-down transition icon md:hidden"></i>
+                                        </div>
+                                        <div class="amazing-item hidden opacity-0 md:flex md:opacity-100">
+                                            <ul class="list-none pl-0 grid grid-cols-2 md:grid-cols-1 gap-5 mt-5">
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Ionic Frameword</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Capacitor</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Stencil</a>
+                                                </li>
+                                                <li class="p-0">
+                                                    <a class="hover:text-slate-600 text-slate-800 text-center font-medium transition-all delay-75 rounded-xl no-underline" href="#">Ionicons</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none mega md:hidden">
+                                <div class="mega-item md:absolute md:left-0 md:right-0 md:m-auto md:w-5/6 md:rounded-3xl md:bg-white md:shadow-2xl p-3 md:p-5 transition delay-150 space-y-5">
+                                    <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center md:hidden">
+                                        <a href="#" class="text-xl md:text-sm">Blog</a>
+                                    </div>
+                                    <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center md:hidden">
+                                        <a href="#" class="text-xl md:text-sm">Company</a>
+                                    </div>
+                                    <div class=" transition-all delay-75 rounded-xl font-bold flex justify-between items-center md:hidden">
+                                        <a href="#" class="text-xl md:text-sm">Contact</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none mega hidden md:inline-block">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-default ">
+                                    Company</div>
+                                <div class="mega-item md:absolute md:left-0 md:right-0 md:m-auto md:w-5/6 md:rounded-3xl md:bg-white md:shadow-2xl p-3 md:p-5 transition delay-150 ">
+                                    <div class="md:flex md:justify-between space-y-5 md:space-y-0 md:space-x-3">
+                                        <div class="hidden md:flex md:flex-col lg:py-3 lg:px-5">
+                                            <h1 class="text-2xl font-medium">About Ionic</h1>
+                                            <p class="lg:max-w-[250px] md:max-w-[180px] mt-3 mb-10 text-xl leading-8 text-slate-500 ">
+                                                Get to know the people behind the code, the mission behind our work, and our vision for the future.
+                                            </p>
+                                        </div>
+                                        <div class="grid grid-cols-2 space-x-2 ">
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Company</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>About us</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Careers(we're hiring!)</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Blog</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Trusted Partners</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Press</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Contact</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="hidden md:inline-block lg:py-3 lg:px-5 ">
+                                                <h3 class="text-black text-lg font-medium ">Customer Success</h3>
+                                                <ul class="space-y-5 mt-5 mb-5 ">
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Advisory Services</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Enterprise Support</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span>Team Traning</span>
+                                                    </li>
+                                                    <li class="text-slate-600 text-md font-medium ">
+                                                        <span class="mr-2 ">Submit & Ticket</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="bg-[url('/assets/bg2.png')] object-contain bg-no-repeat bg-cover w-64 h-[350px] lg:w-72 lg:h-80 rounded-3xl  p-5 hidden md:inline-block col-span-2">
+                                            <h5 class="text-xs text-[#fff] mb-8">FEATURED EBOOK</h5>
+                                            <h3 class="text-[#fff] text-xl lg:text-2xl font-medium">Hybrid vs. Native</h3>
+                                            <h4 class="text-slate-300 font-medium text-lg lg:text-xl mt-3">Learn the differences between hybrid and native apps—we break down all the myths.
+                                            </h4>
+                                            <button class="bg-slate-500/50 text-white px-2 lg:px-3 py-1 rounded-2xl mt-5 lg:mt-8">
+                                            <span class="text-lg lg:text-xl">Read the eBook</span>
+                                            <i class="fa-solid fa-arrow-right text-md"></i>
+                                           </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none  hidden lg:inline-block">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-pointer ">
+                                    Blog</div>
+                            </li>
+                            <li class="group py-5 my-0 border-b md:border-none last:border-none hidden md:inline-block">
+                                <div class="rounded-md my-0 text-slate-600 text-[ 0.938rem] font-medium md:hover:bg-slate-100 px-3 py-1 transition duration-75 cursor-pointer ">
+                                    Pricing</div>
+                            </li>
+                        </ul>
+                        <div class="bg-slate-100 rounded-xl p-4 flex justify-between items-center md:hidden fixed bottom-0 space-x-28">
+                            <div>Contact Sales</div>
+                            <div class="">
+                                <button class="rounded-full py-1 p-2 text-[#0054e9]">Log in</button>
+                                <button class="bg-[#0054e9] text-white rounded-full py-1 px-2 ">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="menuIcon() " class="md:hidden ">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+                <div class="hidden md:flex items-center ">
+                    <a href="# " class="text-[ 0.938rem] text-slate-600 font-medium mr-3 ">Sign in</a>
+                    <button class="px-3 py-2 bg-slate-800 text-white text-[ 0.938rem] rounded-3xl font-medium ">
+      <span>Get started</span>
+      <i class="fa-solid fa-arrow-right text-[ 0.938rem] "></i>
+     </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- secondNav e -->
+
+    <!-- thirdNav s -->
+    <div class=" bg-white z-30 px-3 md:px-5 lg:px-32 flex justify-between items-center py-5 " id="fixedNav">
+        <h6 class="text-[15px] font-bold">Pricing</h6>
+        <button class="px-3 py-1 bg-slate-800  rounded-3xl font-bold ">
+   <span class="text-white text-[15px] ">Contact Sales</span>
+  </button>
+    </div>
+    <!-- thirdNav e -->
+
+    <!-- title s -->
+    <section class=" px-3 md:px-5 lg:px-32 mt-20 md:mt-32 fromBottom" id="main">
+        <div class="text-center space-y-8">
+            <h6 class="text-sm font-bold text-slate-400 tracking-widest">IONIC PLATFORM PRICING</h6>
+            <h1 class="text-6xl font-[1000] text-slate-900">Pick a plan that’s right for you.</h1>
+            <h3 class="text-3xl font-semibold text-slate-600 max-w-2xl lg:max-w-3xl mx-auto">Enterprise-grade cloud and native packages that enhance Ionic application functionality and security.</h3>
+        </div>
+    </section>
+    <!-- title e -->
+
+    <!-- pricing card s -->
+    <section class="mt-32 px-3 md:px-5 lg:px-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- first card -->
+        <div class="border rounded-2xl shadow-lg overflow-hidden relative scaleUp">
+            <div class="p-10 ">
+                <!-- Card Content -->
+                <h6 class="text-slate-900 text-3xl font-bold mb-5">Basic</h6>
+                <h1 class="text-lg text-slate-500 font-bold mb-5">Powerful cloud services to help you ship faster and update your apps in real time.</h1>
+                <h6 class="text-slate-900 text-lg font-bold mb-2">Starting up</h6>
+                <h1 class="text-4xl font-bold mb-5">$100/<span class=" text-sm">mo</span></h1>
+                <h4 class="font-bold text-lg mt-10 mb-5">Cloud app delivery with <span class="text-blue-700"><a href="#">Appflow</a></span></h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                         <path
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                          </svg>
+                        <span class="text-slate-600 font-bold">
+                           Cloud native app builds
+                         </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                          <path
+                           d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                         </svg>
+                        <span class="text-slate-600 font-bold">
+                          Live Updates (starting at 25,000/mo)
+                         </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                         d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                       </svg>
+                        <span class="text-slate-600 font-bold">
+                        Push to app stores
+                       </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                       <path
+                        d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                      </svg>
+                        <span class="text-slate-600 font-bold">
+                      Built-in workflow automation
+                      </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                       d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                     </svg>
+                        <span class="text-slate-600 font-bold">
+                     Native Builds with iOS Enterprise Certs
+                     </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                       <path
+                        d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                      </svg>
+                        <span class="text-slate-600 font-bold">
+                       Includes five (5) seats
+                      </span>
+                    </li>
+                </ul>
+                <h4 class="font-bold text-lg mt-10 mb-5">
+                    Basic support</span>
+                </h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                   <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                        <span class="text-slate-600 font-bold">
+                  Helpdesk ticketing
+                  </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                   <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                        <span class="text-slate-600 font-bold">
+                   Issue resolution
+                  </span>
+                    </li>
+                </ul>
+                <button class="w-full md:w-9/12 lg:w-9/12 p-5 bg-blue-600 rounded-3xl text-white space-x-3 font-bold md:absolute bottom-10"><span class="text-lg">Start your trial</span><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <!-- second card -->
+        <div class="border rounded-2xl shadow-lg overflow-hidden relative scaleUp">
+            <div class="p-10">
+                <!-- Card Content -->
+                <h6 class="text-slate-900 text-3xl font-bold mb-5">Standard</h6>
+                <h1 class="text-lg text-slate-500 font-bold mb-5">Combine the best of our cloud and native solutions for faster development.</h1>
+                <h6 class="text-slate-900 text-lg font-bold mb-2">Starting up</h6>
+                <h1 class="text-4xl font-bold mb-5">$2499/<span class=" text-sm">mo</span></h1>
+                <h4 class="font-bold text-lg mt-10 mb-5">Cloud app delivery with <span class="text-blue-700"><a
+              href="#">Appflow</a></span></h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="text-slate-600 font-bold">
+                        Everything included in Basic, plus:
+                        </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+               d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+             </svg>
+                        <span class="text-slate-600 font-bold">
+              Integrate with CI/CD tools
+             </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+               d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+             </svg>
+                        <span class="text-slate-600 font-bold">
+              Control access with SSO & Permissions
+             </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+               d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+             </svg>
+                        <span class="text-slate-600 font-bold">
+             Use with GitLab Self-Managed, Bitbucket Server, and Azure DevOps
+             </span>
+                    </li>
+                </ul>
+                <h4 class="font-bold text-lg mt-10 mb-5">
+                    Native solutions access</span>
+                </h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                   <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                        <span class="text-slate-600 font-bold">
+                   Advanced biometrics with<span class="text-blue-700 ml-1"><a href="#">Identity Vault</a></span>
+                        </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                   <path
+                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                  </svg>
+                        <span class="text-slate-600 font-bold">
+                   Mobile SSO integration with<span class="text-blue-700 ml-1"><a href="#">Auth Connect</a></span>
+                        </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                       d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                     </svg>
+                        <span class="text-slate-600 font-bold">
+                      Powerful protection with<span class="text-blue-700 ml-1"><a href="#">Secure Storage</a></span>
+                        </span>
+                    </li>
+                </ul>
+                <h4 class="font-bold text-lg mt-10 mb-5">
+                    Enterprise support</span>
+                </h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="text-slate-600 font-bold">
+             Everything included in Basic, plus:
+             </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                       d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                     </svg>
+                        <span class="text-slate-600 font-bold">
+                      Dedicated Customer Success Manager
+                     </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                       d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                     </svg>
+                        <span class="text-slate-600 font-bold">
+                      Roadmap access & influence
+                     </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                       d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                     </svg>
+                        <span class="text-slate-600 font-bold">
+                      Business reviews
+                     </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                       d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                     </svg>
+                        <span class="text-slate-600 font-bold">
+                      Product onboarding
+                     </span>
+                    </li>
+                    <li class="flex  space-x-3">
+                        <svg class=" w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                       <path
+                        d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                      </svg>
+                        <span class="text-slate-600 font-bold">
+                       Implementation & integration assistance
+                      </span>
+                    </li>
+                </ul>
+                <button class="p-5 bg-blue-600 rounded-3xl text-white space-x-3 font-bold lg:absolute bottom-10 w-full lg:w-9/12"><span class="text-lg">Buy now</span><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <!-- third card -->
+        <div class="border rounded-2xl shadow-lg overflow-hidden bg-slate-800 scaleUp">
+            <div class="p-10">
+                <!-- Card Content -->
+                <h6 class="text-white text-3xl font-bold mb-5">Enterprise</h6>
+                <h1 class="text-lg text-slate-100 font-bold mb-5">For teams building mission-critical apps. Access the entire Ionic Enterprise Platform.
+                </h1>
+                <h6 class="text-slate-100 text-lg font-bold mb-2">Custom pricing</h6>
+                <h1 class="text-4xl text-white font-bold mb-5">Contact us</h1>
+                <h4 class="font-bold text-white text-lg mt-10 mb-5">Cloud app delivery with <span class="text-blue-700"><a
+              href="#">Appflow</a></span></h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex text-slate-300 items-center space-x-3">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class=" font-bold">
+              Everything included in Standard
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+            Ask us about unlimited Live Updates
+             </span>
+                    </li>
+                </ul>
+                <h4 class="font-bold text-lg mt-10 mb-5 text-white">
+                    Native solutions & premier plugins access</span>
+                </h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex items-center space-x-3 text-slate-300">
+                        <i class="fa-solid fa-arrow-left "></i>
+                        <span class=" font-bold ">
+             Everything included in Standard, plus:</span>
+                        </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+             Payment collection with Ionic Payments
+                        </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+             Access to Official Integrations library
+                        </span>
+                    </li>
+                </ul>
+                <h4 class="font-bold text-lg mt-10 mb-5 text-white">
+                    Enterprise Premier support</span>
+                </h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex items-center space-x-3 text-slate-300">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class=" font-bold">
+             Everything included in Standard, plus:
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+            Priority hot fixes for Ionic OSS software
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+            Dedicated Solutions Architect
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+              Business reviews
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+             Guaranteed response SLA
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+            Quarterly business reviews
+             </span>
+                    </li>
+                </ul>
+                <h4 class="font-bold text-lg mt-10 mb-5 text-white">
+                    Expert services from Ionic Advisory team</span>
+                </h4>
+                <!-- asses -->
+                <ul class="mb-10 space-y-4">
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+           Direct access to Ionic engineers & experts
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+          Architecture, code, and UX/UI reviews
+             </span>
+                    </li>
+                    <li class="flex text-slate-300  items-center space-x-3">
+                        <i class="fa-solid fa-check"></i>
+                        <span class=" font-bold">
+            Team trainings
+             </span>
+                    </li>
+                </ul>
+                <button class="mx-auto w-full p-5 bg-white rounded-3xl text-black space-x-3 font-bold lg:w-11/12"><span class="text-lg">Contact us</span><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- pricing card e -->
+
+    <!-- content s -->
+    <section class="px-3 md:px-5 lg:px-32 mt-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="space-y-8 border rounded-3xl p-10 fromLeft">
+            <h3 class="text-4xl font-bold">Indies and Startups</h3>
+            <h4 class="text-slate-600 font-bold text-lg">Discounts are available for individuals or small start-ups with annual revenue or funding within certain specified limits.
+            </h4>
+            <div class="flex items-center justify-between">
+                <div>
+                    <h5 class="text-sm font-bold text-slate-700">Starting at</h5>
+                    <h5 class="text-xl font-bold">$49/mo</h5>
+                </div>
+                <button class="px-4 py-2 bg-blue-600 text-white font-bold  rounded-3xl flex items-center">
+                    <span class="text-md mr-3">Learn more</span>
+                    <i class="fa-solid fa-arrow-right "></i>
+                </button>
+            </div>
+        </div>
+        <div class="space-y-8 bg-slate-100 rounded-3xl p-10 fromRight">
+            <h3 class="text-4xl font-bold">Have a complex use case?</h3>
+            <h4 class="text-slate-600 font-bold text-lg">No problem. Our App Strategists will make sure your company is set up for success from day one.
+            </h4>
+            <button class="px-4 py-2 bg-blue-600 text-white font-bold  rounded-3xl flex items-center">
+                    <span class="text-md mr-3">Talk to an expert</span>
+                    <i class="fa-solid fa-arrow-right "></i>
+                </button>
+        </div>
+    </section>
+    <!-- content e -->
+
+    <!-- logo section s -->
+    <section class="mt-48 px-3 md:px-5 lg:px-32" id="logo">
+        <ul class="grid grid-cols-4 md:grid-cols-8 gap-x-10 gap-y-16 md:gap-y-0 md:gap-16 lg:gap-10 px-3 md:px-5 lg:px-32 mx-auto">
+            <li class="">
+                <img class="w-auto h-10" src="/assets/logo/00d00665-9949-4162-9618-0f647b65e22a_ionic-io-homepage-companies-6.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/blog/517feed3-8793-457c-a21f-389f4de1c88e_ionic-io-pricing-plans-8.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/logo/34a64da6-5d52-4680-83e6-536c6a24e9fe_ionic-io-homepage-companies-0.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/logo/3a000871-85b2-4fc2-ae88-3cfe1c9a30ba_ionic-io-homepage-companies-2.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/blog/cat.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/logo/6f5f24b3-12da-4bc8-bde7-5e3160a5f089_ionic-io-homepage-companies-5.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/logo/ee75ec62-8025-4f9d-afde-ce917f41afc8_ionic-io-homepage-companies-3.webp" alt="">
+            </li>
+            <li>
+                <img class="w-auto h-10" src="/assets/logo/fcc6a0db-5a1e-49d9-88b6-e799378d1b27_ionic-io-homepage-companies-1.webp" alt="">
+            </li>
+        </ul>
+    </section>
+    <!-- logo section e -->
+
+    <!-- h & r section s -->
+    <section class="mt-20 px-3 md:px-5 lg:px-32 relative ">
+        <div class="bg-[#119e18] rounded-3xl p-10 py-20 md:pr-40 space-y-10 md:w-[500px] lg:w-[800px] opacity-90 ">
+            <img src="/assets/blog/54072d05-96e1-498f-981f-0c20cd8e6a63_ionic-io-enterprise-quote-0.webp" class="w-20 h-auto" alt="">
+            <p class="text-2xl font-bold text-white leading-10  lg:max-w-lg scaleUp">We didn’t want to maintain separate pipelines for native mobile apps and web apps. We wanted that cross-platform experience so we looked at Ionic. We’re able to use our existing code structure, port everything over, and take advantage of that.</p>
+            <div class="space-x-5 ">
+                <span class="text-2xl text-white font-bold">Nick Trower</span>
+                <span class="text-2xl text-slate-300 font-bold block md:inline-block">Solutions Architect</span>
+            </div>
+        </div>
+        <div class="absolute top-0 md:top-52 right-4 lg:top-20 lg:left-[700px] opacity-10 md:opacity-100 z-10">
+            <img src="/assets/125950ba-ba9f-40ef-893a-6ebc1ddafe45_ionic-io-enterprise-quote-1.webp" class="lg:w-[550px] lg:h-[400px] md:w-96" alt="">
+        </div>
+    </section>
+    <!-- h & r section e -->
+
+    <!-- plan details section s -->
+    <section class="mt-44 px-3 md:px-5 lg:px-32 relative  hidden md:block">
+        <h2 class="text-4xl md:text-6xl font-bold text-center">Plan Details</h2>
+        <table class="md:w-[100%] mx-auto text-start mt-32  ">
+            <thead class="">
+                <th class="text-start text-3xl font-[2000] ">Features</th>
+                <th class="text-start text-3xl font-bold">
+                    <h2 class="text-center">Basic</h2>
+                    <h4 class="text-sm text-slate-800 text-center">$499/mo</h4>
+                </th>
+                <th class="text-start text-3xl font-[2000]">
+                    <h2 class="text-center">Standard</h2>
+                    <h4 class="text-sm text-slate-800 text-center">$2499/mo</h4>
+                </th>
+                <th class="text-start text-3xl font-[2000]">
+                    <h2 class="text-center">Enterprise</h2>
+                    <h4 class="text-sm text-slate-800 text-center">Custom</h4>
+                </th>
+            </thead>
+            <tbody>
+                <!-- cloud -->
+                <tr>
+                    <td class="text-xl font-bold ">Cloud Features</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Native Builds</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Web Previews</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">App Store Publishing</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Live Updates</td>
+                    <td class="text-slate-800 text-center font-bold">25,000/mo</td>
+                    <td class="text-slate-800 text-center font-bold">25,000/mo</td>
+                    <td class="text-slate-800 text-center font-bold">Custom</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Built-In Automations</td>
+                    <td class="text-slate-800 text-center font-bold">4</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">iOS Enterprise Certs</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">User Permissions</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">CI/CD Integration with <span class="text-blue-600">Cloud
+                            CLI</span></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">GitLab Self-Managed Support</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Bitbucket Server Support</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Azure DevOps Support</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Single Sign-On</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Environment Variables</td>
+                    <td class="text-slate-800 text-center font-bold">3</td>
+                    <td class="text-slate-800 text-center font-bold">100</td>
+                    <td class="text-slate-800 text-center font-bold">Custom</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Native Configs</td>
+                    <td class="text-slate-800 text-center font-bold">3</td>
+                    <td class="text-slate-800 text-center font-bold">100</td>
+                    <td class="text-slate-800 text-center font-bold">Custom</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Concurrent Builds</td>
+                    <td class="text-slate-800 text-center font-bold">2</td>
+                    <td class="text-slate-800 text-center font-bold">2</td>
+                    <td class="text-slate-800 text-center font-bold">Custom</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Seats Included</td>
+                    <td class="text-slate-800 text-center font-bold">5</td>
+                    <td class="text-slate-800 text-center font-bold">5</td>
+                    <td class="text-slate-800 text-center font-bold">Custom</td>
+                </tr>
+                <!-- premier -->
+                <tr>
+                    <td class="text-xl font-bold pt-20 ">Premier Plugins & Solutions</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Secure biometrics with<span class="text-blue-600">Identity
+                            Vault</span></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold ">Single app license</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Single sign-on via<span class="text-blue-600">Auth
+                            Connect</span></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold ">Single app license</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Ultra-fast<span class="text-blue-600">Secure Storage</span>
+                    </td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold">Single app license</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Mobile payment collection with <span class="text-blue-600">Payments</span></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Access to Official 3rd-Party Integrations</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <!-- support -->
+                <tr>
+                    <td class="text-xl font-bold pt-20">Support</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Community support on the<span class="text-blue-600">Ionic
+                            Forum</span></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold "><i class="fa-solid fa-check"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Helpdesk Ticketing</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Issue Resolution</td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Customer Success Manager</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Onboarding Assistance</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Dedicated Solutions Architect</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">OSS Priority Hotfixes</td>
+                    <td class="text-slate-800 text-center font-bold">
+                        </i>
+                    </td>
+                    <td class="text-slate-800 text-center font-bold">
+                        </i>
+                    </td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Guaranteed Response SLA
+                    </td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Periodic Business Reviews</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold">Semi-Annual</td>
+                    <td class="text-slate-800 text-center font-bold">Quarterly</td>
+                </tr>
+                <!-- advisory -->
+                <tr>
+                    <td class="text-xl font-bold pt-20 ">Advisory</td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Architecture Reviews</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold "></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">UI/UX Audits</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold "></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Code Reviews</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">App Building Advice & Guidance</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Security & Performance Audits</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"><i class="fa-solid fa-check"></i></td>
+                </tr>
+                <tr>
+                    <td class="text-slate-500  font-bold text-lg">Team Trainings</td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold"></td>
+                    <td class="text-slate-800 text-center font-bold">Add-on</i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- plan details section e -->
+
+    <!-- accdorin section s-->
+    <div class="mt-52 px-3 md:px-5 lg:px-32 h-full ">
+        <h1 class="  font-bold lg:text-7xl md:text-5xl text-4xl text-center mb-20 scaleUp">Have a question?
+        </h1>
+        <div class="h-[900px]">
+            <div class="py-10 max-w-4xl border-b  mx-auto item fromBottom">
+                <div class="flex items-center  justify-between  accordion-brain cursor-pointer  duration-300">
+                    <h1 class="md:text-3xl font-bold  text-xl ">What is the Community plan and who is it for?
+                    </h1>
+                    <div class="downButton ">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden upButton">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <p class="text-ld font-bold  text-slate-600  mt-5 accordion-content animate__animated  animate__zoomIn hidden duration-300 ">
+                    The Community plan is a deeply discounted subscription for Ionic community members who are using Ionic for personal use, or as part of a very small business or early stage startup with less than USD $500,000 in annual revenue or total funds raised. This
+                    includes students, hobbyists, entrepreneurs, and professional developers working on side projects. The Community plan may not be used by businesses with more than USD $500,000 in annual revenue. For more information, check out our
+                    dedicated Community Plan FAQ page.
+                </p>
+            </div>
+            <div class="py-10 max-w-4xl border-b  mx-auto item fromBottom">
+                <div class="flex items-center  justify-between  accordion-brain cursor-pointer  duration-300">
+                    <h1 class="md:text-3xl font-bold  text-xl ">Which plans include access to native solutions like Identity Vault, Auth Connect, and Secure Storage?
+                    </h1>
+                    <div class="downButton ">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden upButton">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <p class="text-ld font-bold  text-slate-600  mt-5 accordion-content animate__animated  animate__zoomIn hidden duration-300 ">
+                    The Basic plan does not include access to these solutions. The Standard plan provides access to Identity Vault, Auth Connect, and Secure Storage only, and is limited to one app per solution. If you would like to purchase additional licenses for more than
+                    one app, contact our Sales team to customize your plan. The Enterprise plan includes access to all of our native solutions, including Payments, and premier integrations, such as Microsoft Intune, Couchbase, and more. If you would like
+                    access to these solutions, contact our team about purchasing an Enterprise plan. Or, build your own custom plan with our custom plan builder.
+                </p>
+            </div>
+            <div class="py-10 max-w-4xl border-b  mx-auto item fromBottom">
+                <div class="flex items-center  justify-between  accordion-brain cursor-pointer  duration-300">
+                    <h1 class="md:text-3xl font-bold  text-xl ">How can I use Appflow with my own CI/CD Tool?
+                    </h1>
+                    <div class="downButton ">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden upButton">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <p class="text-ld font-bold  text-slate-600  mt-5 accordion-content animate__animated  animate__zoomIn hidden duration-300 ">
+                    For teams and businesses that wish to integrate Appflow with their existing CI/CD platform, the Standard and Enterprise plans include access to the Cloud CLI to kick off builds and deployments as steps in your own CI/CD tool. This allows you to use the
+                    powerful CI/CD tooling you already use, while offloading the complexity of mobile DevOps on to Appflow. The Cloud CLI can be installed in any CI/CD tool like Travis, Jenkins, CircleCI, Azure DevOps, Gitlab CI, BitBucket Server, etc.
+                </p>
+            </div>
+            <div class="py-10 max-w-4xl border-b  mx-auto item fromBottom">
+                <div class="flex items-center  justify-between  accordion-brain cursor-pointer  duration-300">
+                    <h1 class="md:text-3xl font-bold  text-xl ">What is the Community plan and who is it for?
+                    </h1>
+                    <div class="downButton ">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden upButton">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <p class="text-ld font-bold  text-slate-600  mt-5 accordion-content animate__animated  animate__zoomIn hidden duration-300 ">
+                    The Community plan is a deeply discounted subscription for Ionic community members who are using Ionic for personal use, or as part of a very small business or early stage startup with less than USD $500,000 in annual revenue or total funds raised. This
+                    includes students, hobbyists, entrepreneurs, and professional developers working on side projects. The Community plan may not be used by businesses with more than USD $500,000 in annual revenue. For more information, check out our
+                    dedicated Community Plan FAQ page.
+                </p>
+            </div>
+            <div class="py-10 max-w-4xl border-b  mx-auto item fromBottom">
+                <div class="flex items-center  justify-between  accordion-brain cursor-pointer  duration-300">
+                    <h1 class="md:text-3xl font-bold  text-xl ">How do Live Update limits scale?
+                    </h1>
+                    <div class="downButton ">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden upButton">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </div>
+                <p class="text-ld font-bold  text-slate-600  mt-5 accordion-content animate__animated  animate__zoomIn hidden duration-300 ">
+                    Appflow allows you to push hot code updates directly to your users’ devices for any modifications to your web code. A single Live Update is one code update to one device. If you send one update to 200 devices, that counts as 200 Live Updates. If you send
+                    two updates to 200 devices, that counts as 400 Live Updates. For most customers, Live Update quantity isn't an issue. If you believe that you might need a very large quantity of updates please reach out to our Sales team to discuss
+                    the best way to scale your growth. Basic and Standard plans start at 25,000 Live Updates per month. Any further increase must be a custom package as we also take into account the size (and "shape") of your updates.
+            </div>
+
+            <!-- footer s-->
+            <footer class=" py-20 border-t mt-32 ">
+                <div class="px-3 md:px-5 lg:px-32 space-y-10 ">
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 md:gap-5 text-start md:text-start ">
+                        <div class="">
+                            <img src="/assets/logo.svg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="text-black font-bold mb-1 ">The Platform</h4>
+                            <ul class="space-y-1 ">
+                                <li class="text-slate-500 ">Overview</li>
+                                <li class="text-slate-500 ">Build</li>
+                                <li class="text-slate-500 ">Secure</li>
+                                <li class="text-slate-500 ">Deliver</li>
+                                <li class="text-slate-500 ">Why Ionic?</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-black font-bold mb-1 ">Products</h4>
+                            <ul class="space-y-1 ">
+                                <li class="text-slate-500 ">Framework</li>
+                                <li class="text-slate-500 ">Capacitor</li>
+                                <li class="text-slate-500 ">Appflow</li>
+                                <li class="text-slate-500 ">Identity Vault</li>
+                                <li class="text-slate-500 ">Secure Storage</li>
+                                <li class="text-slate-500 ">Auth Connect</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-black font-bold mb-1 ">Resources</h4>
+                            <ul class="space-y-1 ">
+                                <li class="text-slate-500 ">Resource Center</li>
+                                <li class="text-slate-500 ">Blog</li>
+                                <li class="text-slate-500 ">Articles</li>
+                                <li class="text-slate-500 ">Webinars</li>
+                                <li class="text-slate-500 ">Case Studies</li>
+                                <li class="text-slate-500 ">Videos</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-black font-bold mb-1 ">Company</h4>
+                            <ul class="space-y-1 ">
+                                <li class="text-slate-500 ">About us</li>
+                                <li class="text-slate-500 ">Customers</li>
+                                <li class="text-slate-500 ">Brand</li>
+                                <li class="text-slate-500 ">Contact</li>
+                                <li class="text-slate-500 ">Carrers</li>
+                                <li class="text-slate-500 ">Privacy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-black font-bold mb-1 ">Support</h4>
+                            <ul class="space-y-1 ">
+                                <li class="text-slate-500 ">Help center</li>
+                                <li class="text-slate-500 ">Partners</li>
+                                <li class="text-slate-500 ">Advisory</li>
+                                <li class="text-slate-500 ">Enterprise Guide</li>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between flex-col space-y-5 md:space-y-0 md:flex-row">
+                        <div class="space-x-6">
+                            <span class="text-slate-500 text-xs">Copyright © 2022 Ionic</span>
+                            <span class="text-slate-500 text-xs hover:text-slate-700 cursor-pointer">Terms</span>
+                            <span class="text-slate-500 text-xs hover:text-slate-700 cursor-pointer">Pravicy</span>
+                        </div>
+                        <div class="text-slate-500 space-x-3">
+                            <i class="fa-brands fa-twitter hover:text-slate-700 cursor-pointer"></i>
+                            <i class="fa-brands fa-github hover:text-slate-700 cursor-pointer"></i>
+                            <i class="fa-brands fa-facebook hover:text-slate-700 cursor-pointer"></i>
+                        </div>
+                    </div>
+            </footer>
+            <!-- footer e -->
+            </div>
+        </div>
+        <!-- accdorin section e -->
+
+
+</body>
+<script src="/src/pricing.js "></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.scaleUp', {
+        duration: 2000,
+        scale: 0.9,
+        delay: 300,
+        interval: 300,
+        reset: true
+    });
+    ScrollReveal().reveal('.fromBottom', {
+        duration: 1500,
+        origin: 'bottom',
+        distance: '20px',
+        interval: 300,
+        delay: 300,
+        reset: true
+    });
+    ScrollReveal().reveal('.fromLeft', {
+        duration: 2000,
+        origin: 'left',
+        distance: '10px',
+        interval: 300,
+        delay: 300,
+        reset: true
+    });
+    ScrollReveal().reveal('.fromRight', {
+        duration: 2000,
+        origin: 'right',
+        distance: '10px',
+        interval: 500,
+        delay: 300,
+        reset: true
+    });
+    ScrollReveal().reveal('.easeIn', {
+        duration: 1500,
+        easing: 'ease-in',
+        interval: 300,
+        delay: 300,
+        reset: true
+    });
+</script>
+
+</html>
+
+</html>
